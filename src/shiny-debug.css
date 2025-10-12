@@ -1,0 +1,30 @@
+/* Debug fallback for the shining text animation.
+   This provides the keyframes and a utility class so the animation works
+   even if Tailwind's generated CSS isn't present. It intentionally mirrors
+   the intended Tailwind-generated rules. */
+
+@keyframes shine {
+	0% {
+		background-position: 100%;
+	}
+
+	100% {
+		background-position: -100%;
+	}
+}
+
+.animate-shine {
+	animation-name: shine;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	/* default duration can be overridden inline by the component */
+	animation-duration: 5s;
+	background-size: 200% 100%;
+}
+
+/* ensure text background-clip works across browsers */
+.bg-clip-text,
+.text-bg-clip {
+	-webkit-background-clip: text;
+	background-clip: text;
+}
