@@ -2,6 +2,10 @@ import { Button } from '@heroui/react';
 import ShinyText from './components/ShinyText';
 import ProfileCard from './components/ProfileCard';
 import { MdDownload } from 'react-icons/md';
+import avatarIcon from './assets/profile.jpeg';
+import miniAvatarIcon from './assets/headshot.jpg';
+import grainImg from './assets/grain.webp';
+import bgIcon from './assets/bg.png';
 
 export default function HeroSection() {
 	return (
@@ -35,10 +39,10 @@ export default function HeroSection() {
 					handle="benjitusk"
 					status="Living the dream"
 					contactText="Contact Me"
-					avatarUrl="src/assets/profile.jpeg"
-					miniAvatarUrl="src/assets/headshot.jpg"
-					iconUrl="src/assets/bg.png"
-					grainUrl="src/assets/grain.webp"
+					avatarUrl={avatarIcon}
+					miniAvatarUrl={miniAvatarIcon}
+					iconUrl={bgIcon}
+					grainUrl={grainImg}
 					showUserInfo={true}
 					enableTilt={true}
 					enableMobileTilt={false}
