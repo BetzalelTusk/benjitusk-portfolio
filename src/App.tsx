@@ -1,4 +1,4 @@
-import AboutSection from './AboutSection';
+// import AboutSection from './AboutSection';
 import Footer from './Footer';
 import Header from './Header';
 import HeroSection from './HeroSection';
@@ -10,7 +10,7 @@ function App() {
 			<Header />
 			<main className="flex-1">
 				<HeroSection />
-				<AboutSection />
+				{/* <AboutSection /> */}
 			</main>
 			<Footer />
 		</div>
