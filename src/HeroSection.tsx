@@ -46,8 +46,8 @@ export default function HeroSection() {
 							Schedulearn LLC
 						</Link>
 						where I work to make school scheduling simpler and more efficient for school
-						administrators. My goal is to design technology that genuinely helps people — empowering
-						educators and students through thoughtful, intuitive tools.
+						administrators. My goal is to design technology that genuinely helps — empowering people
+						through thoughtful, useful tools.
 						<br />
 						<br />
 						Currently pursuing a degree in Computer Science at the Jerusalem College of Technology
