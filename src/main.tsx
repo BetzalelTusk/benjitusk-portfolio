@@ -2,7 +2,6 @@ import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HeroUIProvider } from '@heroui/react';
 import './index.css';
-import './shiny-debug.css';
 import App from './App.tsx';
 import { initGA, trackPageview, GA_MEASUREMENT_ID } from './lib/ga';
 
