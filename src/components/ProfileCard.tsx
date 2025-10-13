@@ -19,7 +19,7 @@ interface ProfileCardProps {
 	status?: string;
 	contactText?: string;
 	showUserInfo?: boolean;
-	onContactClick?: () => void;
+	contactHref?: string;
 }
 
 const DEFAULT_BEHIND_GRADIENT =
@@ -68,7 +68,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 	status = 'Online',
 	contactText = 'Contact',
 	showUserInfo = true,
-	onContactClick,
+	contactHref = '#contact',
 }) => {
 	const wrapRef = useRef<HTMLDivElement>(null);
 	const cardRef = useRef<HTMLDivElement>(null);
@@ -297,9 +297,9 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 		[iconUrl, grainUrl, showBehindGradient, behindGradient, innerGradient]
 	);
 
-	const handleContactClick = useCallback(() => {
-		onContactClick?.();
-	}, [onContactClick]);
+	// const handleContactClick = useCallback(() => {
+	// 	onContactClick?.();
+	// }, [onContactClick]);
 
 	return (
 		<div ref={wrapRef} className={`pc-card-wrapper ${className}`.trim()} style={cardStyle}>
@@ -338,15 +338,15 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 										<div className="pc-status">{status}</div>
 									</div>
 								</div>
-								<button
+								<a
 									className="pc-contact-btn"
-									onClick={handleContactClick}
+									href={contactHref}
+									target="_blank"
 									style={{ pointerEvents: 'auto' }}
-									type="button"
 									aria-label={`Contact ${name || 'user'}`}
 								>
 									{contactText}
-								</button>
+								</a>
 							</div>
 						)}
 					</div>

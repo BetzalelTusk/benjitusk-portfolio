@@ -78,17 +78,8 @@ export default function HeroSection() {
 					showUserInfo={true}
 					enableTilt={true}
 					enableMobileTilt={false}
-					onContactClick={() => console.log('Contact clicked')}
-					className="z-50"
+					contactHref="https://linkedin.com/in/benjitusk"
 				/>
-
-				{/* image is in src/assets
-				<img
-					src="src/assets/headshot.jpeg"
-					alt="Hero Graphic"
-					// image should be circular, shifted down and to the right in the container, and half the size of the container
-					className="w-[200px] h-auto rounded-full shadow-lg"
-				/> */}
 			</div>
 		</section>
 	);
