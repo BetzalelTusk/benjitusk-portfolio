@@ -10,7 +10,7 @@ import { Link } from '@heroui/react';
 
 export default function HeroSection() {
 	return (
-		<section className="flex flex-row px-10 py-6 bg-gradient-to-b from-background to-primary/10 align-start">
+		<section className="flex flex-row px-10 py-10 bg-gradient-to-b from-background to-primary/10 align-start">
 			<div className="flex flex-col py-18 flex-1">
 				<h1 className="text-4xl font-bold mb-4 md:text-5xl">
 					Hello, my name is <span className="text-primary">Benjamin Tusk</span>.
